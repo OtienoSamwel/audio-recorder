@@ -115,7 +115,7 @@ class MainActivity : ComponentActivity() {
             it.putExtra(Intent.EXTRA_STREAM, uri)
             it.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
         }
-        startActivity(Intent.createChooser(intent, "Share audio file"))
+        startActivity(Intent.createChooser(intent, "Share voice recording"))
     }
 
     companion object {

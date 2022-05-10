@@ -12,7 +12,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import com.airbnb.lottie.compose.LottieAnimation
 import com.airbnb.lottie.compose.LottieCompositionSpec
@@ -80,7 +79,7 @@ fun AudioRecording(
                 Icon(Icons.Rounded.PlayArrow, contentDescription = "play button")
             }
 
-            Text(text = recording.name)
+            Text(text = recording.name, modifier = Modifier.weight(1f))
 
             IconButton(onClick = { shareFile(recording) }) {
                 Icon(Icons.Rounded.Share, contentDescription = "share button")
